@@ -8,4 +8,16 @@
   <groupId>b112-twly-web</groupId>
   <artifactId>b112-twly-web</artifactId>
   <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>b112-twly-dao</groupId>
+  		<artifactId>b112-twly-dao</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>b112-twly-base</groupId>
+  		<artifactId>b112-twly-base</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
