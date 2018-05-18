@@ -4,26 +4,26 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Table(name="myorg")
+import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
+
+@Table(name="bmyorg")
 @Entity
-public class proprieter {
+public class Proprieter extends BaseEntity{
 	
-	@Column(name = "ID")
-	String id;
+	private static final long serialVersionUID = 1L;
+	
 	@Column(name = "password")
 	String password;
+	
 	@Column(name = "usename")
 	String name;
+	
 	@Column(name = "mass")
-	String post="社长";
+	String post;
+	
 	@Column(name = "Email")
 	String email;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getPassword() {
 		return password;
 	}
