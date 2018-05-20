@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import edu.zut.cs.javaee.dream.admin.domain.Proprieter;
 import edu.zut.cs.javaee.dream.base.dao.GenericDaoTestCase;
 
-public class ProprieterDaoTest extends GenericDaoTestCase<Long, Proprieter, ProprieterDao>{
-	
+public class ProprieterDaoTest extends GenericDaoTestCase<Long, Proprieter, ProprieterDao> {
+
 	@Autowired
 	ProprieterDao proprieterDao;
 
@@ -19,5 +19,4 @@ public class ProprieterDaoTest extends GenericDaoTestCase<Long, Proprieter, Prop
 		List<Proprieter> result = this.proprieterDao.findAll();
 
 	}
-
 }

@@ -44,7 +44,7 @@
 		p:persistenceUnitName="ApplicationEntityManager">
 		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
 		<property name="jpaDialect" ref="jpaDialect" />
-		<property name="packagesToScan" value="edu.zut.cs.*" />
+		<property name="packagesToScan" value="cn.edu.zzti.*" />
 		<property name="jpaProperties">
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
