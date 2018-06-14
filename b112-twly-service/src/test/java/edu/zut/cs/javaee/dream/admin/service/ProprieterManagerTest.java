@@ -2,16 +2,20 @@ package edu.zut.cs.javaee.dream.admin.service;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.zut.cs.javaee.dream.admin.domain.Proprieter;
-import edu.zut.cs.javaee.dream.base.service.GenericGenerator;
+import edu.zut.cs.javaee.dream.base.service.GenericManagerTestCase;
 
-public class ProprieterManagerTest extends GenericGenerator{
+public class ProprieterManagerTest extends GenericManagerTestCase<Long, Proprieter, ProprieterManager>{
+
+	public ProprieterManagerTest() {
+		super(Proprieter.class);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Autowired
 	ProprieterManager proprieterManager;
@@ -30,16 +34,6 @@ public class ProprieterManagerTest extends GenericGenerator{
 		Proprieter proprieter = this.proprieterManager.findbyUsername(proprietername);
 		// assertEquals(user.getUsername(), expected_user.getUsername());
 		assertEquals(proprieter, expected_proprieter);
-	}
-	
-	@Test
-	public void testSave() {
-		List<Proprieter> proprieterList = new ArrayList<Proprieter>();
-		for (int i = 0;i<10;i++) {
-			Proprieter proprieter = new Proprieter();
-			proprieterList.add(proprieter);
-		}
-		this.proprieterManager.save(proprieterList);
 	}
 
 }
