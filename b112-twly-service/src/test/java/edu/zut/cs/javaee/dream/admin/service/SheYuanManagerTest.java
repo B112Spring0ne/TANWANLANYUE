@@ -1,6 +1,5 @@
 package edu.zut.cs.javaee.dream.admin.service;
 
-
 import static org.junit.Assert.assertEquals;
 
 import java.util.List;
@@ -9,7 +8,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import edu.zut.cs.javaee.dream.admin.domain.User;
-import edu.zut.cs.javaee.dream.admin.service.UserManager;
 import edu.zut.cs.javaee.dream.base.service.GenericManagerTestCase;
 
 public class SheYuanManagerTest extends GenericManagerTestCase<Long, User, UserManager>  {
