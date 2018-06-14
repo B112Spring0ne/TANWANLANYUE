@@ -1,29 +1,30 @@
 package edu.zut.cs.javaee.dream.admin.domain;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
-
+@Entity
+@Table(name="admin")
 public class Admin extends BaseEntity {
 
-	 private String name;
-	 
-	    private String password;
-	 
-	    public Admin(String name, String password) {
-	        this.name = name;
-	        this.password = password;
-	    }
-	 
-	    public void show() {
-	        System.out.println("姓名：" + name + "，密码：" + password);
-	    }
-	     
-	    public static void main(String[] args) {
-	        Admin admin1 = new Admin("admin1", "111111");
-	        admin1.show();
-	        Admin admin2 = new Admin("admin2", "222222");
-	        admin2.show();
-	    }
+	private static final long serialVersionUID = -1L;
+	@Column(name="admin_id")
+	String Admin_ID;
+	@Column(name="admin_id")
+	String password;
+	public String getAdmin_ID() {
+		return Admin_ID;
+	}
+	public void setAdmin_ID(String admin_ID) {
+		Admin_ID = admin_ID;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 }
