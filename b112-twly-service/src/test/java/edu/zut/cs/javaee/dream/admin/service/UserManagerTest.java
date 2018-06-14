@@ -1,7 +1,6 @@
 package edu.zut.cs.javaee.dream.admin.service;
 
-import static org.junit.Assert.assertEquals;
-
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
@@ -10,30 +9,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import edu.zut.cs.javaee.dream.admin.domain.User;
 import edu.zut.cs.javaee.dream.base.service.GenericManagerTestCase;
 
-public class UserManagerTest extends GenericManagerTestCase<Long, User, UserManager>  {
+public class UserManagerTest extends GenericManagerTestCase<Long, User, UserManager> {
+
+	UserManager userManager;
 
 	public UserManagerTest() {
 		super(User.class);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Autowired
-	UserManager userManager;
-
-	@Test
-	public void testFindAll() {
-		List<User> all = this.userManager.findAll();
-		assertEquals(all.size(), 100);
+	public void setUserManager(UserManager userManager) {
+		this.userManager = userManager;
+		this.manager = this.userManager;
 	}
 
 	@Test
-	public void testFindbyUsername() {
-		String username = "world";
-		User expected_user = new User();
-		// expected_user.setUsername(username);
-		User user = this.userManager.findbyUsername(username);
-		// assertEquals(user.getUsername(), expected_user.getUsername());
-		assertEquals(user, expected_user);
+	public void testSave() {
+		List<User> userList = new ArrayList<User>();
+		for (int i = 0;i<10;i++) {
+			User user = new User();
+			userList.add(user);
+		}
+		this.userManager.save(userList);
 	}
-
 }

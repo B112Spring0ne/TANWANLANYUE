@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 import edu.zut.cs.javaee.dream.admin.dao.ProprieterDao;
 import edu.zut.cs.javaee.dream.admin.domain.Proprieter;
-import edu.zut.cs.javaee.dream.admin.domain.User;
 import edu.zut.cs.javaee.dream.admin.service.ProprieterManager;
 import edu.zut.cs.javaee.dream.base.service.impl.GenericManagerImpl;
 

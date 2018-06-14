@@ -36,19 +36,24 @@ public class AdminEntityGenerator extends GenericGenerator {
 				group.setEmail("123"+i+j+"@qq.com");
 				group.setPost("2");
 				g = this.proprieterManager.save(group);
-				this.gen_user(g);
 			}
 		}
 	}
-
-	public void gen_user(Proprieter g) {
-		for (int i = 0; i < 10; i++) {
-			Proprieter u = new Proprieter();
-			u.setUsername("username_" + i);
-			u.setPassword("password_" + i);
-			u.setGroup(g);
-			this.userManager.save(u);
+	@Test
+	public Proprieter find_proprieter(long yzid)
+	{
+		Proprieter g = new Proprieter();
+		int i;
+		boolean flag=true;
+		for(i=0;i<100;i++)
+		{
+			if(g.getId()==yzid)
+			{
+				return g;	
+			}
 		}
+		return null;
+		
 	}
 
 }
