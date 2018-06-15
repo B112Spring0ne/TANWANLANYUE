@@ -44,10 +44,9 @@ public class AdminEntityGenerator extends GenericGenerator {
 	public void gen_user(Proprieter g) {
 		for (int i = 0; i < 10; i++) {
 			Proprieter u = new Proprieter();
-			u.setUsername("username_" + i);
+			u.setName("username_" + i);
 			u.setPassword("password_" + i);
-			u.setGroup(g);
-			this.userManager.save(u);
+			this.proprieterManager.save(u);
 		}
 	}
 
