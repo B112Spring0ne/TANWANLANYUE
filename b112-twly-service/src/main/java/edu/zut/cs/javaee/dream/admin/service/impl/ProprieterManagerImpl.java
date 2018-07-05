@@ -12,6 +12,7 @@ import edu.zut.cs.javaee.dream.base.service.impl.GenericManagerImpl;
 @Component
 public class ProprieterManagerImpl extends GenericManagerImpl<Proprieter, Long> implements ProprieterManager{
 
+	/*定义ProprieterDao实体*/
 	ProprieterDao proprieterDao;
 
 	@Autowired

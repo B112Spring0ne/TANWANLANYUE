@@ -12,6 +12,7 @@ public class ProprieterDaoTest extends GenericDaoTestCase<Long, Proprieter, Prop
 
 	@Autowired
 	ProprieterDao proprieterDao;
+	/*找到proprieter的方法*/
 
 	@Test
 	public void testFindAll() {

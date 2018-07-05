@@ -1,3 +1,4 @@
+/*表信息*/
 Ext.define('proprieter.view.ProprieterEdit', {
 	extend : 'Ext.window.Window',
 	alias : 'widget.proprieterEdit',

@@ -1,3 +1,4 @@
+/*如何显示表*/
 var pageSize = 20;
 
 var proprieterStore = Ext.create('proprieter.store.ProprieterStore');
@@ -5,6 +6,7 @@ var proprieterStore = Ext.create('proprieter.store.ProprieterStore');
 Ext.define('proprieter.view.ProprieterGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.proprieterGrid',
+	/*我的表标题显示*/
 	title : 'Java EE 社团-社长列表',
 	store : proprieterStore,
 	columns : [ {

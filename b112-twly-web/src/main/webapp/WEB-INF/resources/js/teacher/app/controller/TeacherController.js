@@ -1,3 +1,4 @@
+/*教师控制器*/
 Ext.define('teacher.controller.TeacherController', {
 	extend : 'Ext.app.Controller',
 	alias : 'widget.teacherController',

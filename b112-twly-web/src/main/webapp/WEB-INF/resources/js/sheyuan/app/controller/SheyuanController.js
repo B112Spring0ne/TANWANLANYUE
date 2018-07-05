@@ -1,3 +1,4 @@
+/*社员控制器总体控制方法*/
 Ext.define('sheyuan.controller.SheyuanController', {
 	extend : 'Ext.app.Controller',
 	alias : 'widget.sheyuanController',

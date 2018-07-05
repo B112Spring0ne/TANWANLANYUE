@@ -8,10 +8,11 @@ import edu.zut.cs.javaee.dream.admin.domain.Teacher;
 import edu.zut.cs.javaee.dream.admin.domain.User;
 import edu.zut.cs.javaee.dream.admin.service.TeacherManager;
 import edu.zut.cs.javaee.dream.base.service.impl.GenericManagerImpl;
-
+/*继承GenericManagerImpl和接口TeacherManager*/
 @Component
 public class TeacherManagerImpl extends GenericManagerImpl<Teacher, Long> implements TeacherManager{
 
+	/*定义TeacherDao实体*/
 	TeacherDao teacherDao;
 
 	@Autowired

@@ -33,6 +33,7 @@ public class UserManagerTest extends GenericManagerTestCase<Long, User, UserMana
 	public void testSave() {
 		logger.debug("This is a test method for AOP");
 		List<User> userList = new ArrayList<User>();
+		
 		for (int i = 0;i<10;i++) {
 			User user = new User();
 			userList.add(user);

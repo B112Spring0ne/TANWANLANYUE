@@ -1,3 +1,4 @@
+/*显示表*/
 var pageSize = 20;
 
 var teacherStore = Ext.create('teacher.store.TeacherStore');
@@ -5,6 +6,7 @@ var teacherStore = Ext.create('teacher.store.TeacherStore');
 Ext.define('teacher.view.TeacherGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.teacherGrid',
+	/*我的表标题显示*/
 	title : 'Java EE 教师列表',
 	store : teacherStore,
 	columns : [ {

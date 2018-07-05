@@ -1,3 +1,4 @@
+/*显示表*/
 var pageSize = 20;
 
 var sheyuanStore = Ext.create('sheyuan.store.SheyuanStore');
@@ -5,7 +6,7 @@ var sheyuanStore = Ext.create('sheyuan.store.SheyuanStore');
 Ext.define('sheyuan.view.SheyuanGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.sheyuanGrid',
-	title : 'Java EE 社团-社员列表',
+	title : 'Java EE 社团-社员列表',//标题
 	store : sheyuanStore,
 	columns : [ {
 		text : 'ID',

@@ -6,24 +6,25 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
-
+/*社员表名字*/
 @Table(name="T_ADMIN_USER")
 @Entity
 public class Sheyuan extends BaseEntity{
 	
 	private static final long serialVersionUID = 1L;
-	
+	/*社员密码*/
 	@Column(name = "password")
 	String password;
-	
+	/*社员姓名*/
 	@Column(name = "usename")
 	String name;
-	
+	/*社员所在社团*/
 	@Column(name = "mass")
 	String post;
-	
+	/*社员电子邮件*/
 	@Column(name = "Email")
 	String email;
+	/*实体类的get set方法*/
 
 	public String getPassword() {
 		return password;

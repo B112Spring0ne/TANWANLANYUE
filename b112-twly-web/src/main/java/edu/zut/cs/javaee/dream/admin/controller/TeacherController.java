@@ -9,6 +9,7 @@ import edu.zut.cs.javaee.dream.admin.domain.Teacher;
 import edu.zut.cs.javaee.dream.admin.service.TeacherManager;
 import edu.zut.cs.javaee.dream.base.web.spring.controller.GenericController;
 
+/*教师控制器*/
 @Controller
 @RequestMapping("/teacher")
 public class TeacherController extends GenericController<Teacher,Long,TeacherManager>{
@@ -18,7 +19,9 @@ public class TeacherController extends GenericController<Teacher,Long,TeacherMan
 		this.teacherManager = teacherManager;
 		this.manager  =this.teacherManager;
 	}
+	/*用get方法*/
 	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
+	/*后缀方法展示*/
 	public String index() {
 		String result = "/teacher/index";
 		return result;

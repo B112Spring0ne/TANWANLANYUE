@@ -7,7 +7,7 @@ import edu.zut.cs.javaee.dream.admin.dao.SheyuanDao;
 import edu.zut.cs.javaee.dream.admin.domain.Sheyuan;
 import edu.zut.cs.javaee.dream.admin.service.SheyuanManager;
 import edu.zut.cs.javaee.dream.base.service.impl.GenericManagerImpl;
-
+/*继承GenericManagerImpl和接口SheyuanManager*/
 @Component
 public class SheyuanManagerImpl extends GenericManagerImpl<Sheyuan, Long> implements SheyuanManager{
 

@@ -23,7 +23,7 @@ public class Proprieter extends BaseEntity{
 	/*社长电子邮件*/
 	@Column(name = "Email")
 	String email;
-
+	/*实体类的get set方法*/
 	public String getPassword() {
 		return password;
 	}

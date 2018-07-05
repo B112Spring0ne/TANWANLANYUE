@@ -1,6 +1,8 @@
+/*模型方法*/
 Ext.define('sheyuan.model.SheyuanModel', {
 	extend : 'Ext.data.Model',
 	alias : 'widget.sheyuanModel',
+	/*与表中数据一一对应，名字和类型*/
 	fields : [ {
 		name : 'id',
 		type : 'int',
