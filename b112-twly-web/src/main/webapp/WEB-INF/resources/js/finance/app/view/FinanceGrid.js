@@ -1,3 +1,4 @@
+/*显示表*/
 var pageSize = 20;
 
 var financeStore = Ext.create('finance.store.FinanceStore');
@@ -5,6 +6,7 @@ var financeStore = Ext.create('finance.store.FinanceStore');
 Ext.define('finance.view.FinanceGrid', {
 	extend : 'Ext.grid.GridPanel',
 	alias : 'widget.financeGrid',
+	/*我的表标题显示*/
 	title : 'Java EE 经济分配者列表',
 	store : financeStore,
 	columns : [ {

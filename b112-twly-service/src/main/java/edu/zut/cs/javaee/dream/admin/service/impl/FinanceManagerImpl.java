@@ -7,10 +7,10 @@ import edu.zut.cs.javaee.dream.admin.dao.FinanceDao;
 import edu.zut.cs.javaee.dream.admin.domain.Finance;
 import edu.zut.cs.javaee.dream.admin.service.FinanceManager;
 import edu.zut.cs.javaee.dream.base.service.impl.GenericManagerImpl;
-
+/*继承GenericManagerImpl和接口TeacherManager*/
 @Component
 public class FinanceManagerImpl extends GenericManagerImpl<Finance, Long> implements FinanceManager{
-
+	/*定义FinanceDao实体*/
 	FinanceDao financeDao;
 
 	@Autowired

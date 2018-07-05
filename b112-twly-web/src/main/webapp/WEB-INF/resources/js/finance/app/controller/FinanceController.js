@@ -1,3 +1,4 @@
+/*财务控制器*/
 Ext.define('finance.controller.FinanceController', {
 	extend : 'Ext.app.Controller',
 	alias : 'widget.financeController',
