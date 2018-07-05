@@ -9,6 +9,7 @@ import edu.zut.cs.javaee.dream.admin.domain.Proprieter;
 import edu.zut.cs.javaee.dream.admin.service.ProprieterManager;
 import edu.zut.cs.javaee.dream.base.web.spring.controller.GenericController;
 
+/*社长控制器*/
 @Controller
 @RequestMapping("/proprieter")
 public class ProprieterController extends GenericController<Proprieter,Long,ProprieterManager>{
@@ -18,7 +19,9 @@ public class ProprieterController extends GenericController<Proprieter,Long,Prop
 		this.proprieterManager = proprieterManager;
 		this.manager  =this.proprieterManager;
 	}
+	/*用get方法*/
 	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
+	/*后缀方法展示*/
 	public String index() {
 		String result = "/proprieter/index";
 		return result;

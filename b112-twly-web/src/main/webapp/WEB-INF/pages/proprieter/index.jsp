@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Java EE 课程学生</title>
+<title>Java EE 社长</title>
 </head>
 <link rel="stylesheet" type="text/css"
 	href="<%=extjsPath%>resources/css/ext-all-neptune.css">

@@ -5,22 +5,22 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import edu.zut.cs.javaee.dream.base.domain.BaseEntity;
-
+/*数据表名*/
 @Table(name="bmyorg")
 @Entity
 public class Proprieter extends BaseEntity{
 	
 	private static final long serialVersionUID = 1L;
-	
+	/*社长密码*/
 	@Column(name = "password")
 	String password;
-	
+	/*社长姓名*/
 	@Column(name = "usename")
 	String name;
-	
+	/*社长社团*/
 	@Column(name = "mass")
 	String post;
-	
+	/*社长电子邮件*/
 	@Column(name = "Email")
 	String email;
 

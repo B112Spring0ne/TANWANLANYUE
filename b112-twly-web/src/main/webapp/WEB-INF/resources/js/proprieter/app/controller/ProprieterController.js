@@ -1,3 +1,4 @@
+/*社长控制器*/
 Ext.define('proprieter.controller.ProprieterController', {
 	extend : 'Ext.app.Controller',
 	alias : 'widget.proprieterController',
